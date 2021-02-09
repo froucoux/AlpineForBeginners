@@ -23,6 +23,11 @@
         <h1 x-text="countdown"></h1>
     </div>
 
+    <div x-data=" { show: true } ">
+        <p x-show="show">Toggling text</p>
+        <button x-on:click="show = !show">Toggle view</button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 </body>
 </html>
