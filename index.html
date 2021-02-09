@@ -41,6 +41,10 @@
         <input type="text" x-model="title"/>
     </div>
 
+    <div x-data=" { code: '<p>Dynamic HTML Paragraph</p>' } ">
+        <div x-html="code"></div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 </body>
 </html>
