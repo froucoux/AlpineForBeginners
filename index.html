@@ -18,9 +18,18 @@
         <button x-on:click="count--">Decrement</button>
     </div>
 
-    <div x-data=" { countdown: 60 } "
-         x-init="setInterval( () => { countdown--; }, 1000 );">
-        <h1 x-text="countdown"></h1>
+    <div x-data=" {
+        countdown: 60,
+        show: true
+     } "
+         x-init="setInterval( () => {
+            countdown--;
+            show = !show;
+        }, 1000 );">
+        <h1
+            x-text="countdown"
+            x-show="show">
+        </h1>
     </div>
 
     <div x-data=" { show: true } ">
