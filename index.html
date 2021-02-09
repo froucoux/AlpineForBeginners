@@ -18,6 +18,11 @@
         <button x-on:click="count--">Decrement</button>
     </div>
 
+    <div x-data=" { countdown: 60 } "
+         x-init="setInterval( () => { countdown--; }, 1000 );">
+        <h1 x-text="countdown"></h1>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 </body>
 </html>
