@@ -36,6 +36,11 @@
         <button x-on:click="show = !show">Toggle view</button>
     </div>
 
+    <div x-data=" { title: 'Please complete the field' } ">
+        <p x-text="title"></p>
+        <input type="text" x-model="title"/>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 </body>
 </html>
