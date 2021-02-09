@@ -9,7 +9,7 @@
 
     <div x-data="{ title: 'The Lord of the Rings' }">
         <p x-text="title"></p>
-        <button x-on:click="title='The Two Towers'">Change title</button>
+        <button @click="title='The Two Towers'">Change title</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
