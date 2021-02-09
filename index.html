@@ -24,7 +24,6 @@
      } "
          x-init="setInterval( () => {
             countdown--;
-            show = !show;
         }, 1000 );">
         <h1
             x-text="countdown"
@@ -33,7 +32,7 @@
     </div>
 
     <div x-data=" { show: true } ">
-        <p x-show="show">Toggling text</p>
+        <p x-show.transition="show">Toggling text</p>
         <button x-on:click="show = !show">Toggle view</button>
     </div>
 
